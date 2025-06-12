@@ -1,1 +1,6 @@
-# DFCCNet-main
+# DFCCNet: Unified Dual-domain Fusion and Color-aware Residual Correction for Robust Single Image Dehazing
+Abstract
+===========================
+Image dehazing is a key task in image enhancement and restoration, with wide-ranging applications in various downstream tasks. To address the limitations of existing methods in detail recovery and color distortion, we propose an end-to-end dehazing network called Dual-domain Fusion and Color Correction Network (DFCCNet). Specifically, we first design a Haze Estimation Block to obtain more accurate haze density priors. Then, the network uses wavelet transform to extract multi-scale frequency sub-band features and fuses them with spatial domain features to enhance the representation of haze layers and edge structures. Guided by haze priors, the improved features help avoid background misinterpretation and edge blurring. Meanwhile, to address color shifts often caused by halo removal, we introduce a Color Residual Gate module, which effectively restores realistic and natural color distributions through color correction and residual signal modulation. Finally, we propose a learnable fusion mechanism to enable adaptive interaction and reconstruction between different features, promoting visually friendly and perceptual enhancement. Experimental results show that DFCCNet achieves competitive performance in both visual quality and quantitative metrics on multiple benchmark datasets.
+
+<img src="images/Overall_frame.png" width="80%">
