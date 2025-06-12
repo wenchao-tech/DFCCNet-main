@@ -110,6 +110,17 @@ Run the following script to test the trained model：
 python3 eval.py --dataset (dataset name) --model_name (model name) --pre_trained_model (Test sample address)
 ```
 ## 📊 Results
+### Results
+<img src="images/image.png" width="80%">
+
+### Dehazing results on SOTS-indoor
 <img src="images/indoor.png" width="80%">
+
+### Dehazing results on SOTS-outdoor
 <img src="images/outdoor.png" width="80%">
+
+### Dehazing results on Haze4K
+<img src="images/Haze4K.png" width="80%">
+
+### Dehazing results on RW2AH
 <img src="images/wr2ah.png" width="80%">
