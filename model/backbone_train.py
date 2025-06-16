@@ -73,7 +73,7 @@ class DFCCNet(nn.Module):
         self.mix1 = MSLFBlock(base_dim * 4, reduction=8)
         self.mix2 = MSLFBlock(base_dim * 2, reduction=4)
         self.mix3 = MSLFBlock(base_dim, reduction=2)
-        
+        self.hazyestimate = FourierWaveletHazeEstimatorWithAttention(3,16,base_dim)
         self.crg_color1 = ColorResidualGate(base_dim)
         self.crg_color2 = ColorResidualGate(base_dim * 4,reduction=16)
 
